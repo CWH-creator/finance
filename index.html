@@ -1038,6 +1038,7 @@ function seedDemo(){
     }
     localStorage.setItem('pf_sal',JSON.stringify(salaryHistory));
   }
+  if(!Object.keys(reConfig).length){
     reConfig={loanOrig:8000000,loanRemain:6200000,rate:2.06,monthlyTotal:23620};
     localStorage.setItem('pf_re_c',JSON.stringify(reConfig));
     applyReConfig();
