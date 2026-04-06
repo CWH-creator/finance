@@ -21,11 +21,11 @@
   --gold:#a87808; --blue:#3060a0;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Noto Sans TC',sans-serif;font-weight:400;background:var(--bg);color:var(--text);min-height:100vh;font-size:15px}
+body{font-family:'Noto Sans TC',sans-serif;font-weight:400;background:var(--bg);color:var(--text);min-height:100vh;font-size:16px}
 
 /* HEADER */
 header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
-header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;letter-spacing:.22em;color:var(--ink)}
+header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:22px;letter-spacing:.22em;color:var(--ink)}
 .mnav{display:flex;align-items:center;gap:10px}
 .mnav button{background:none;border:1px solid var(--border);width:26px;height:26px;border-radius:2px;cursor:pointer;color:var(--muted);font-size:13px;transition:all .15s}
 .mnav button:hover{background:var(--bg);color:var(--text)}
@@ -33,7 +33,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 
 /* TABS */
 .tabs{display:flex;border-bottom:1px solid var(--border);background:var(--surface);padding:0 32px;overflow-x:auto}
-.tab{padding:10px 18px;font-size:14px;letter-spacing:.05em;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;user-select:none;white-space:nowrap;flex-shrink:0}
+.tab{padding:11px 20px;font-size:15px;letter-spacing:.03em;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;user-select:none;white-space:nowrap;flex-shrink:0}
 .tab.active{color:var(--ink);border-bottom-color:var(--accent);font-weight:500}
 .tab:hover:not(.active){color:var(--text)}
 
@@ -50,8 +50,8 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 
 /* FORM */
 .fg{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
-.fg label{font-size:12px;letter-spacing:.05em;color:var(--muted);font-weight:500}
-.fg input,.fg select{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:8px 10px;font-family:'Noto Sans TC',sans-serif;font-size:14px;font-weight:400;color:var(--text);outline:none;width:100%;transition:border-color .15s}
+.fg label{font-size:13px;letter-spacing:.03em;color:var(--muted);font-weight:500}
+.fg input,.fg select{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:9px 11px;font-family:'Noto Sans TC',sans-serif;font-size:15px;font-weight:400;color:var(--text);outline:none;width:100%;transition:border-color .15s}
 .fg input:focus,.fg select:focus{border-color:var(--accent)}
 .fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238c8278'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;padding-right:26px}
 .frow{display:flex;gap:8px}
@@ -64,7 +64,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .calc-box .ct{border-top:1px solid var(--border);margin-top:6px;padding-top:6px;font-weight:500}
 
 /* BUTTON */
-.btn{padding:10px 14px;border-radius:2px;font-family:'Noto Sans TC',sans-serif;font-size:14px;letter-spacing:.05em;cursor:pointer;transition:all .15s;border:none;width:100%;margin-top:2px}
+.btn{padding:11px 14px;border-radius:2px;font-family:'Noto Sans TC',sans-serif;font-size:15px;letter-spacing:.03em;cursor:pointer;transition:all .15s;border:none;width:100%;margin-top:2px}
 .btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:var(--ink)}.btn-p:disabled{background:var(--border);cursor:not-allowed}
 .btn-o{background:none;border:1px solid var(--border);color:var(--accent)}.btn-o:hover{border-color:var(--accent);background:var(--bg)}
 .btn-sell{background:#8c3030;color:#fff}.btn-sell:hover{background:#6e2020}.btn-sell:disabled{background:var(--border);cursor:not-allowed}
@@ -82,8 +82,8 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 /* SUMMARY STRIP */
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
 .sc{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:13px 16px}
-.sc .lb{font-size:12px;letter-spacing:.08em;color:var(--muted);margin-bottom:4px;font-weight:500}
-.sc .vl{font-size:22px;font-weight:500;color:var(--ink);letter-spacing:-.01em}
+.sc .lb{font-size:13px;letter-spacing:.05em;color:var(--muted);margin-bottom:4px;font-weight:500}
+.sc .vl{font-size:24px;font-weight:500;color:var(--ink);letter-spacing:-.01em}
 .sc .vl.up{color:var(--up)}.sc .vl.dn{color:var(--dn)}.sc .vl.blu{color:var(--blue)}
 .sc .sb{font-size:11px;color:var(--muted);margin-top:3px}
 
@@ -195,9 +195,9 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .txi:hover{background:var(--bg)}
 .tdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .tinfo{flex:1;min-width:0}
-.tdesc{font-size:14px;color:var(--text);margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.tmeta{font-size:12px;color:var(--muted)}
-.tamt{font-size:14px;font-weight:500;text-align:right;white-space:nowrap}
+.tdesc{font-size:15px;color:var(--text);margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tmeta{font-size:13px;color:var(--muted)}
+.tamt{font-size:16px;font-weight:500;text-align:right;white-space:nowrap}
 .tamt.income{color:var(--up)}.tamt.expense{color:var(--ink)}
 
 /* BUDGET */
@@ -415,7 +415,20 @@ canvas{width:100%!important}
 
 @media(max-width:900px){
   .donut-row{grid-template-columns:1fr}
-}</style>
+}/* ── 可收放明細 ── */
+.collapsible-hdr{
+  display:flex;align-items:center;justify-content:space-between;
+  cursor:pointer;padding:10px 0;user-select:none;
+}
+.collapsible-hdr:hover .ch-title{color:var(--ink)}
+.ch-title{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500;transition:color .15s}
+.ch-right{display:flex;align-items:center;gap:10px}
+.ch-count{font-size:12px;color:var(--muted);background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:2px 8px}
+.ch-arrow{font-size:14px;color:var(--muted);transition:transform .2s;display:inline-block}
+.ch-arrow.open{transform:rotate(180deg)}
+.collapsible-body{overflow:hidden;transition:max-height .25s ease, opacity .2s ease;max-height:0;opacity:0}
+.collapsible-body.open{max-height:2000px;opacity:1}
+</style>
 </head>
 <body>
 
@@ -486,15 +499,21 @@ canvas{width:100%!important}
     </div>
   </div>
 
-  <div class="tx-hdr">
-    <h3>本月明細</h3>
-    <div class="tx-filters">
-      <button class="txf active" onclick="filterTx('all',this)">全部</button>
-      <button class="txf"        onclick="filterTx('income',this)">收入</button>
-      <button class="txf"        onclick="filterTx('expense',this)">支出</button>
+  <div class="collapsible-hdr" onclick="toggleCollapsible('overview-txl', this)">
+    <span class="ch-title">本月明細</span>
+    <div class="ch-right">
+      <div class="tx-filters">
+        <button class="txf active" onclick="event.stopPropagation();filterTx('all',this)">全部</button>
+        <button class="txf"        onclick="event.stopPropagation();filterTx('income',this)">收入</button>
+        <button class="txf"        onclick="event.stopPropagation();filterTx('expense',this)">支出</button>
+      </div>
+      <span class="ch-count" id="tx-count">0</span>
+      <span class="ch-arrow">▼</span>
     </div>
   </div>
-  <div class="txl" id="tx-list"></div>
+  <div class="collapsible-body" id="overview-txl">
+    <div class="txl" id="tx-list"></div>
+  </div>
 </div>
 
 <!-- ══════════ 收入 ══════════ -->
@@ -580,8 +599,16 @@ canvas{width:100%!important}
 
       <!-- 其他收入明細 -->
       <div class="card">
-        <div class="card-title">其他收入明細（本月）</div>
-        <div class="txl" id="tx-inc-list"></div>
+        <div class="collapsible-hdr" onclick="toggleCollapsible('inc-txl',this)">
+          <span class="ch-title">其他收入明細（本月）</span>
+          <div class="ch-right">
+            <span class="ch-count" id="inc-tx-count">0</span>
+            <span class="ch-arrow">▼</span>
+          </div>
+        </div>
+        <div class="collapsible-body" id="inc-txl">
+          <div class="txl" id="tx-inc-list"></div>
+        </div>
       </div>
 
       <!-- 收入來源月別趨勢 -->
@@ -629,8 +656,16 @@ canvas{width:100%!important}
     </div>
     <div>
       <div class="card">
-        <div class="card-title">本月支出明細</div>
-        <div class="txl" id="tx-exp-list"></div>
+        <div class="collapsible-hdr" onclick="toggleCollapsible('exp-txl',this)">
+          <span class="ch-title">本月支出明細</span>
+          <div class="ch-right">
+            <span class="ch-count" id="exp-tx-count">0</span>
+            <span class="ch-arrow">▼</span>
+          </div>
+        </div>
+        <div class="collapsible-body" id="exp-txl">
+          <div class="txl" id="tx-exp-list"></div>
+        </div>
       </div>
 
       <!-- 支出類別月別趨勢 -->
@@ -1210,6 +1245,9 @@ function renderDash(){
   const eL=[...mTx.filter(t=>t.type==='expense')].sort(sd);
   document.getElementById('tx-inc-list').innerHTML=iL.length?iL.map(txHTML).join(''):'<div class="empty">本月尚無收入記錄</div>';
   document.getElementById('tx-exp-list').innerHTML=eL.length?eL.map(txHTML).join(''):'<div class="empty">本月尚無支出記錄</div>';
+  // 更新各明細筆數 badge
+  const incC=document.getElementById('inc-tx-count'); if(incC) incC.textContent=iL.length+'筆';
+  const expC=document.getElementById('exp-tx-count'); if(expC) expC.textContent=eL.length+'筆';
   renderNWHistory();
   // 重新渲染圖表
   renderAllCharts();
@@ -1219,6 +1257,9 @@ function renderTxList(mTx){
   const f=txFilter==='all'?mTx:mTx.filter(t=>t.type===txFilter);
   const s=[...f].sort((a,b)=>new Date(b.date)-new Date(a.date));
   document.getElementById('tx-list').innerHTML=s.length?s.map(txHTML).join(''):'<div class="empty">本月尚無記錄</div>';
+  // 更新筆數 badge
+  const countEl=document.getElementById('tx-count');
+  if(countEl) countEl.textContent=s.length+'筆';
 }
 function filterTx(f,btn){
   txFilter=f;
@@ -2111,6 +2152,16 @@ function renderExpTrendChart(){
 function renderAllCharts(){
   renderDonutCharts();
   renderTrendChart();
+}
+
+// ══ COLLAPSIBLE ══
+function toggleCollapsible(bodyId, hdr){
+  const body  = document.getElementById(bodyId);
+  const arrow = hdr.querySelector('.ch-arrow');
+  if(!body) return;
+  const isOpen = body.classList.contains('open');
+  body.classList.toggle('open', !isOpen);
+  if(arrow) arrow.classList.toggle('open', !isOpen);
 }
 
 // ── Status ──
