@@ -22,7 +22,7 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Noto Sans TC',sans-serif;font-weight:300;background:var(--bg);color:var(--text);min-height:100vh}
- 
+
 /* HEADER */
 header{background:var(--surface);border-bottom:1px solid var(--border);padding:16px 32px;display:flex;align-items:center;justify-content:space-between}
 header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;letter-spacing:.22em;color:var(--ink)}
@@ -30,24 +30,24 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .mnav button{background:none;border:1px solid var(--border);width:26px;height:26px;border-radius:2px;cursor:pointer;color:var(--muted);font-size:13px;transition:all .15s}
 .mnav button:hover{background:var(--bg);color:var(--text)}
 #monthLabel{font-size:13px;font-weight:400;letter-spacing:.12em;color:var(--ink);min-width:108px;text-align:center}
- 
+
 /* TABS */
 .tabs{display:flex;border-bottom:1px solid var(--border);background:var(--surface);padding:0 32px;overflow-x:auto}
 .tab{padding:10px 18px;font-size:12px;letter-spacing:.1em;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s;user-select:none;white-space:nowrap;flex-shrink:0}
 .tab.active{color:var(--ink);border-bottom-color:var(--accent);font-weight:400}
 .tab:hover:not(.active){color:var(--text)}
- 
+
 /* PAGES */
 .page{display:none;padding:24px 32px}
 .page.active{display:block}
 .two-col{display:grid;grid-template-columns:300px 1fr;gap:20px;align-items:start}
 .three-col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
- 
+
 /* CARD */
 .card{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:18px}
 .card+.card{margin-top:14px}
 .card-title{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
- 
+
 /* FORM */
 .fg{display:flex;flex-direction:column;gap:5px;margin-bottom:10px}
 .fg label{font-size:10px;letter-spacing:.1em;color:var(--muted)}
@@ -56,29 +56,29 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .fg select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%238c8278'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 9px center;padding-right:26px}
 .frow{display:flex;gap:8px}
 .frow .fg{flex:1}
- 
+
 /* CALC PREVIEW */
 .calc-box{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:10px 12px;margin-bottom:10px;font-size:12px;line-height:1.9}
 .calc-box .cl{color:var(--muted);font-size:10px}
 .calc-box .cv{font-weight:400;float:right}
 .calc-box .ct{border-top:1px solid var(--border);margin-top:6px;padding-top:6px;font-weight:500}
- 
+
 /* BUTTON */
 .btn{padding:8px 14px;border-radius:2px;font-family:'Noto Sans TC',sans-serif;font-size:12px;letter-spacing:.08em;cursor:pointer;transition:all .15s;border:none;width:100%;margin-top:2px}
 .btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:var(--ink)}.btn-p:disabled{background:var(--border);cursor:not-allowed}
 .btn-o{background:none;border:1px solid var(--border);color:var(--accent)}.btn-o:hover{border-color:var(--accent);background:var(--bg)}
 .btn-sell{background:#8c3030;color:#fff}.btn-sell:hover{background:#6e2020}.btn-sell:disabled{background:var(--border);cursor:not-allowed}
- 
+
 /* STATUS */
 .st{font-size:11px;text-align:center;padding:6px;border-radius:2px;letter-spacing:.05em;margin-top:8px;display:none}
 .st.ok{background:#fef0f0;color:var(--up);display:block}   /* 成功用紅（台股慣例） */
 .st.er{background:#eaf5ef;color:var(--dn);display:block}
 .st.ld{background:#fef9f0;color:var(--gold);display:block}
- 
+
 /* NOTICE */
 .notice{background:#fef9f0;border:1px solid #ead090;border-radius:2px;padding:10px 14px;font-size:11px;color:#7a5c10;line-height:1.9;margin-bottom:18px}
 .notice code{background:#f5e8c0;padding:1px 4px;border-radius:2px;font-size:10px}
- 
+
 /* SUMMARY STRIP */
 .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
 .sc{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:13px 16px}
@@ -86,14 +86,14 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .sc .vl{font-size:20px;font-weight:400;color:var(--ink);letter-spacing:-.01em}
 .sc .vl.up{color:var(--up)}.sc .vl.dn{color:var(--dn)}.sc .vl.blu{color:var(--blue)}
 .sc .sb{font-size:10px;color:var(--muted);margin-top:3px}
- 
+
 /* INCOME GRID */
 .igrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
 .ic{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:10px 12px;position:relative;overflow:hidden}
 .ic .bar,.ec .bar,.stk .bar{position:absolute;left:0;top:0;bottom:0;width:3px;border-radius:2px 0 0 2px}
 .ic .il,.ec .el{font-size:10px;color:var(--muted);margin-bottom:3px}
 .ic .iv{font-size:14px;font-weight:400}
- 
+
 /* EXPENSE GRID */
 .egrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:20px}
 .ec{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:10px 12px;position:relative;overflow:hidden}
@@ -104,7 +104,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .pb{height:100%;border-radius:2px;transition:width .4s}
 .erem{font-size:9px;margin-top:3px;color:var(--muted)}
 .erem.over{color:var(--up)}
- 
+
 /* ── STOCK MODULE ── */
 /* Holdings table */
 .stk-table{width:100%;border-collapse:collapse;font-size:12px}
@@ -119,14 +119,14 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .tag-flat{background:var(--bg);color:var(--muted);padding:2px 6px;border-radius:2px;font-size:11px}
 .stk-price-input{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:4px 6px;font-size:12px;font-family:'Noto Sans TC',sans-serif;width:80px;text-align:right;outline:none;transition:border-color .15s}
 .stk-price-input:focus{border-color:var(--accent)}
- 
+
 /* Stock summary strip */
 .stk-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:20px}
 .stk-sc{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:12px 14px}
 .stk-sc .lb{font-size:10px;letter-spacing:.15em;color:var(--muted);margin-bottom:4px}
 .stk-sc .vl{font-size:18px;font-weight:400;color:var(--ink)}
 .stk-sc .vl.up{color:var(--up)}.stk-sc .vl.dn{color:var(--dn)}
- 
+
 /* Trade log */
 .trade-log{display:flex;flex-direction:column;gap:1px;max-height:400px;overflow-y:auto}
 .trade-item{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:9px 12px;display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center}
@@ -138,7 +138,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .trade-sub{font-size:10px;color:var(--muted);margin-top:1px}
 .trade-amt{text-align:right;font-size:12px}
 .trade-pnl{font-size:10px;margin-top:1px;text-align:right}
- 
+
 /* NET WORTH */
 .nw-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
 .nw-section{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:16px}
@@ -157,7 +157,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .nwt-cell:last-child{border-right:none}
 .nwt-cell .lb{font-size:10px;letter-spacing:.15em;color:var(--muted);margin-bottom:5px}
 .nwt-cell .vl{font-size:20px;font-weight:400}
- 
+
 /* HISTORY */
 .hist-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
 .hist-row .hd{color:var(--muted)}
@@ -165,7 +165,7 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .diff-b{font-size:10px;padding:2px 5px;border-radius:2px}
 .diff-b.up{background:#fde8e8;color:var(--up)}   /* 資產增加=紅 */
 .diff-b.dn{background:#e8f5ee;color:var(--dn)}   /* 資產減少=綠 */
- 
+
 /* TX */
 .tx-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
 .tx-hdr h3{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-weight:400}
@@ -181,23 +181,23 @@ header h1{font-family:'Noto Serif TC',serif;font-weight:300;font-size:19px;lette
 .tmeta{font-size:10px;color:var(--muted)}
 .tamt{font-size:13px;font-weight:400;text-align:right;white-space:nowrap}
 .tamt.income{color:var(--up)}.tamt.expense{color:var(--ink)}
- 
+
 /* BUDGET */
 .brow{display:flex;align-items:center;gap:8px;margin-bottom:8px}
 .bdot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
 .brow label{font-size:12px;flex:1}
 .brow input{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:4px 7px;font-size:12px;font-family:'Noto Sans TC',sans-serif;width:110px;text-align:right;outline:none;color:var(--text);transition:border-color .15s}
 .brow input:focus{border-color:var(--accent)}
- 
+
 .slbl{font-size:10px;letter-spacing:.18em;color:var(--muted);margin-bottom:8px;margin-top:4px}
 .empty{text-align:center;padding:28px;color:var(--muted);font-size:12px;letter-spacing:.05em}
 hr{border:none;border-top:1px solid var(--border);margin:12px 0}
- 
+
 /* MODAL OVERLAY for delete confirm */
 .mode-toggle{display:flex;gap:0;margin-bottom:14px;border:1px solid var(--border);border-radius:2px;overflow:hidden}
 .mode-btn{flex:1;padding:7px;font-family:'Noto Sans TC',sans-serif;font-size:12px;background:none;border:none;cursor:pointer;letter-spacing:.05em;color:var(--muted);transition:all .15s}
 .mode-btn.active{background:var(--accent);color:#fff}
- 
+
 /* ── REAL ESTATE MODULE ── */
 .re-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
 .re-sc{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:13px 16px}
@@ -205,11 +205,11 @@ hr{border:none;border-top:1px solid var(--border);margin:12px 0}
 .re-sc .vl{font-size:20px;font-weight:400;color:var(--ink)}
 .re-sc .vl.up{color:var(--up)}.re-sc .vl.dn{color:var(--dn)}.re-sc .vl.blu{color:var(--blue)}
 .re-sc .sb{font-size:10px;color:var(--muted);margin-top:3px}
- 
+
 /* Chart container */
 .chart-wrap{position:relative;height:220px;margin-bottom:4px}
 canvas{width:100%!important}
- 
+
 /* Payment log */
 .pay-item{background:var(--surface);border:1px solid var(--border);border-radius:2px;padding:10px 14px;display:grid;grid-template-columns:80px 1fr auto auto auto;gap:10px;align-items:center;font-size:12px}
 .pay-item:hover{background:var(--bg)}
@@ -219,18 +219,18 @@ canvas{width:100%!important}
 .pay-badge.i{background:#e8f5ee;color:var(--dn)}
 .pay-badge.t{background:var(--bg);color:var(--muted)}
 .pay-amt{text-align:right;font-weight:400}
- 
+
 /* Loan progress bar */
 .loan-wrap{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:14px 16px;margin-bottom:14px}
 .loan-meta{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:8px}
 .loan-bar-wrap{height:6px;background:var(--border);border-radius:3px;overflow:hidden}
 .loan-bar{height:100%;border-radius:3px;background:var(--up);transition:width .4s}
- 
+
 /* Value history table */
 .val-hist-row{display:grid;grid-template-columns:80px 1fr 1fr 1fr auto;gap:8px;align-items:center;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px}
 .val-hist-row.hd{font-size:10px;letter-spacing:.1em;color:var(--muted);border-bottom:2px solid var(--border)}
 .val-hist-row:last-child{border-bottom:none}
- 
+
 @media(max-width:900px){
   .re-strip{grid-template-columns:1fr 1fr}
   .pay-item{grid-template-columns:60px 1fr auto}
@@ -257,7 +257,7 @@ canvas{width:100%!important}
   -webkit-tap-highlight-color:transparent;
 }
 .fab:hover,.fab:active{background:var(--ink);transform:scale(1.08)}
- 
+
 /* Modal overlay */
 .qe-overlay{
   display:none;position:fixed;inset:0;z-index:300;
@@ -265,7 +265,7 @@ canvas{width:100%!important}
   align-items:flex-end;justify-content:center;
 }
 .qe-overlay.open{display:flex}
- 
+
 /* Modal sheet */
 .qe-sheet{
   background:var(--surface);width:100%;max-width:480px;
@@ -275,21 +275,21 @@ canvas{width:100%!important}
   max-height:92vh;overflow-y:auto;
 }
 .qe-overlay.open .qe-sheet{transform:translateY(0)}
- 
+
 /* Sheet handle */
 .qe-handle{width:36px;height:4px;background:var(--border);border-radius:2px;margin:12px auto 0}
- 
+
 /* Sheet header */
 .qe-header{padding:14px 20px 0;display:flex;align-items:center;justify-content:space-between}
 .qe-header h2{font-family:'Noto Serif TC',serif;font-weight:300;font-size:17px;letter-spacing:.12em;color:var(--ink)}
 .qe-close{background:none;border:none;font-size:22px;color:var(--muted);cursor:pointer;padding:4px;line-height:1}
- 
+
 /* Type toggle */
 .qe-type{display:flex;margin:14px 20px 0;border:1px solid var(--border);border-radius:4px;overflow:hidden}
 .qe-type-btn{flex:1;padding:9px;font-family:'Noto Sans TC',sans-serif;font-size:13px;background:none;border:none;cursor:pointer;color:var(--muted);transition:all .15s;letter-spacing:.05em}
 .qe-type-btn.active.inc{background:#eaf5ef;color:var(--dn);font-weight:400}
 .qe-type-btn.active.exp{background:#fde8e8;color:var(--up);font-weight:400}
- 
+
 /* Sheet form */
 .qe-body{padding:16px 20px 8px}
 .qe-fg{display:flex;flex-direction:column;gap:6px;margin-bottom:12px}
@@ -308,12 +308,12 @@ canvas{width:100%!important}
 }
 .qe-frow{display:flex;gap:10px}
 .qe-frow .qe-fg{flex:1}
- 
+
 /* Amount input big */
 .qe-amt-wrap{position:relative}
 .qe-amt-prefix{position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:18px;color:var(--muted);pointer-events:none}
 .qe-fg input.qe-amt{font-size:22px;font-weight:400;padding-left:28px;letter-spacing:.02em}
- 
+
 /* Submit */
 .qe-submit{
   display:block;width:calc(100% - 40px);margin:4px 20px 0;
@@ -327,7 +327,7 @@ canvas{width:100%!important}
 .qe-st.ok{background:#eaf5ef;color:var(--dn);display:block}
 .qe-st.er{background:#fde8e8;color:var(--up);display:block}
 .qe-st.ld{background:#fef9f0;color:var(--gold);display:block}
- 
+
 /* Safe area padding for iOS home bar */
 @supports(padding-bottom:env(safe-area-inset-bottom)){
   .fab{bottom:calc(28px + env(safe-area-inset-bottom))}
@@ -336,7 +336,7 @@ canvas{width:100%!important}
 .sal-mode-toggle{display:flex;margin-bottom:14px;border:1px solid var(--border);border-radius:2px;overflow:hidden}
 .sal-mode-btn{flex:1;padding:8px;font-family:'Noto Sans TC',sans-serif;font-size:12px;background:none;border:none;cursor:pointer;color:var(--muted);transition:all .15s;letter-spacing:.05em}
 .sal-mode-btn.active{background:var(--accent);color:#fff}
- 
+
 .sal-section{margin-bottom:12px}
 .sal-section-title{font-size:10px;letter-spacing:.18em;color:var(--muted);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid var(--border)}
 .sal-row{display:flex;align-items:center;gap:8px;margin-bottom:7px}
@@ -345,7 +345,7 @@ canvas{width:100%!important}
 .sal-row input:focus{border-color:var(--accent)}
 .sal-row input.deduct{border-left:3px solid var(--dn)}
 .sal-row input.income-item{border-left:3px solid var(--up)}
- 
+
 .sal-result{background:var(--bg);border:1px solid var(--border);border-radius:2px;padding:12px 14px;margin:12px 0}
 .sal-result-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12px;margin-bottom:5px}
 .sal-result-row:last-child{margin-bottom:0;padding-top:8px;border-top:1px solid var(--border);font-size:14px;font-weight:400}
@@ -354,7 +354,7 @@ canvas{width:100%!important}
 .sal-result-row .rv.up{color:var(--up)}
 .sal-result-row .rv.dn{color:var(--dn)}
 .sal-result-row .rv.total{color:var(--ink);font-size:18px}
- 
+
 /* 薪資歷史 */
 .sal-hist-row{display:grid;grid-template-columns:70px 1fr 1fr 1fr;gap:8px;padding:8px 0;border-bottom:1px solid var(--border);font-size:12px;align-items:center}
 .sal-hist-row.hd{font-size:10px;letter-spacing:.08em;color:var(--muted);border-bottom:2px solid var(--border)}
@@ -362,7 +362,7 @@ canvas{width:100%!important}
 </style>
 </head>
 <body>
- 
+
 <header>
   <h1>個 人 財 務 本</h1>
   <div class="mnav">
@@ -371,7 +371,7 @@ canvas{width:100%!important}
     <button onclick="changeMonth(1)">›</button>
   </div>
 </header>
- 
+
 <div class="tabs">
   <div class="tab active" onclick="switchTab('overview',this)">總覽</div>
   <div class="tab"        onclick="switchTab('income',this)">收入</div>
@@ -381,7 +381,7 @@ canvas{width:100%!important}
   <div class="tab"        onclick="switchTab('networth',this)">資產負債</div>
   <div class="tab"        onclick="switchTab('settings',this)">預算設定</div>
 </div>
- 
+
 <!-- ══════════ 總覽 ══════════ -->
 <div id="tab-overview" class="page active">
   <div id="noticeBar" class="notice" style="display:none">
@@ -407,7 +407,7 @@ canvas{width:100%!important}
   </div>
   <div class="txl" id="tx-list"></div>
 </div>
- 
+
 <!-- ══════════ 收入 ══════════ -->
 <div id="tab-income" class="page">
   <div class="two-col">
@@ -418,12 +418,12 @@ canvas{width:100%!important}
         <button class="sal-mode-btn active" id="inc-mode-sal" onclick="setIncMode('salary',this)">💼 薪資單</button>
         <button class="sal-mode-btn"        id="inc-mode-oth" onclick="setIncMode('other',this)">📌 其他收入</button>
       </div>
- 
+
       <!-- 薪資單表單 -->
       <div id="form-salary" class="card">
         <div class="card-title">本月薪資明細</div>
         <div class="fg"><label>月份</label><input type="month" id="sal-month"></div>
- 
+
         <!-- 加給項目 -->
         <div class="sal-section">
           <div class="sal-section-title">加給項目（應領）</div>
@@ -433,7 +433,7 @@ canvas{width:100%!important}
           <div class="sal-row"><label>加班費</label><input type="number" id="sal-ot" placeholder="0" class="income-item" oninput="calcSalary()"></div>
           <div class="sal-row"><label>其他加給</label><input type="number" id="sal-other-inc" placeholder="0" class="income-item" oninput="calcSalary()"></div>
         </div>
- 
+
         <!-- 扣除項目 -->
         <div class="sal-section">
           <div class="sal-section-title">扣除項目（必扣）</div>
@@ -442,18 +442,18 @@ canvas{width:100%!important}
           <div class="sal-row"><label>健保費</label><input type="number" id="sal-health" placeholder="0" class="deduct" oninput="calcSalary()"></div>
           <div class="sal-row"><label>其他扣除</label><input type="number" id="sal-other-ded" placeholder="0" class="deduct" oninput="calcSalary()"></div>
         </div>
- 
+
         <!-- 計算結果 -->
         <div class="sal-result">
           <div class="sal-result-row"><span class="rl">應領合計</span><span class="rv up" id="sal-gross">$0</span></div>
           <div class="sal-result-row"><span class="rl">扣除合計</span><span class="rv dn" id="sal-deduct-total">$0</span></div>
           <div class="sal-result-row"><span class="rl">實拿薪資</span><span class="rv total" id="sal-net">$0</span></div>
         </div>
- 
+
         <button class="btn btn-p" id="btn-sal" onclick="submitSalary()">儲存本月薪資</button>
         <div class="st" id="st-sal"></div>
       </div>
- 
+
       <!-- 其他收入表單 -->
       <div id="form-inc-other" class="card" style="display:none">
         <div class="card-title">新增其他收入</div>
@@ -474,7 +474,7 @@ canvas{width:100%!important}
         <div class="st" id="st-inc"></div>
       </div>
     </div>
- 
+
     <!-- 右：薪資歷史 + 收入明細 -->
     <div>
       <!-- 薪資歷史 -->
@@ -488,7 +488,7 @@ canvas{width:100%!important}
         </div>
         <div id="sal-history"><div class="empty">尚無薪資記錄</div></div>
       </div>
- 
+
       <!-- 其他收入明細 -->
       <div class="card">
         <div class="card-title">其他收入明細（本月）</div>
@@ -497,7 +497,7 @@ canvas{width:100%!important}
     </div>
   </div>
 </div>
- 
+
 <!-- ══════════ 支出 ══════════ -->
 <div id="tab-expense" class="page">
   <div class="two-col">
@@ -533,10 +533,10 @@ canvas{width:100%!important}
     </div>
   </div>
 </div>
- 
+
 <!-- ══════════ 股票 ══════════ -->
 <div id="tab-stock" class="page">
- 
+
   <!-- 持倉總覽 -->
   <div class="stk-strip">
     <div class="stk-sc"><div class="lb">持倉總成本</div><div class="vl" id="stk-total-cost">—</div></div>
@@ -544,7 +544,7 @@ canvas{width:100%!important}
     <div class="stk-sc"><div class="lb">未實現損益</div><div class="vl" id="stk-unrealized">—</div></div>
     <div class="stk-sc"><div class="lb">已實現損益（全部）</div><div class="vl" id="stk-realized">—</div></div>
   </div>
- 
+
   <!-- 持倉清單 -->
   <div class="card" style="margin-bottom:14px">
     <div class="card-title">持倉清單（輸入現價即時計算未實現損益）</div>
@@ -568,7 +568,7 @@ canvas{width:100%!important}
       </table>
     </div>
   </div>
- 
+
   <div class="two-col">
     <!-- 左：輸入表單 -->
     <div>
@@ -577,7 +577,7 @@ canvas{width:100%!important}
         <button class="mode-btn active" id="mode-buy"  onclick="setMode('buy')">買入</button>
         <button class="mode-btn"        id="mode-sell" onclick="setMode('sell')">賣出</button>
       </div>
- 
+
       <!-- 買入表單 -->
       <div id="form-buy" class="card">
         <div class="card-title">記錄買入</div>
@@ -591,7 +591,7 @@ canvas{width:100%!important}
           <div class="fg"><label>買入均價（元）</label><input type="number" id="b-price" placeholder="0.00" step="0.01" oninput="calcBuy()"></div>
         </div>
         <div class="fg"><label>手續費（元，預設 0.1425%）</label><input type="number" id="b-fee" placeholder="自動計算" step="1" oninput="calcBuy()"></div>
- 
+
         <!-- 計算預覽 -->
         <div class="calc-box" id="buy-preview">
           <div><span class="cl">買入金額</span><span class="cv" id="bp-gross">—</span></div>
@@ -601,7 +601,7 @@ canvas{width:100%!important}
         <button class="btn btn-p" id="btn-buy" onclick="submitBuy()">確認買入</button>
         <div class="st" id="st-buy"></div>
       </div>
- 
+
       <!-- 賣出表單 -->
       <div id="form-sell" class="card" style="display:none">
         <div class="card-title">記錄賣出</div>
@@ -621,7 +621,7 @@ canvas{width:100%!important}
           <div class="fg"><label>手續費（元）</label><input type="number" id="s-fee" placeholder="自動計算" step="1" oninput="calcSell()"></div>
           <div class="fg"><label>交易稅（元）</label><input type="number" id="s-tax" placeholder="自動計算 0.3%" step="1" oninput="calcSell()"></div>
         </div>
- 
+
         <!-- 賣出計算預覽 -->
         <div class="calc-box" id="sell-preview">
           <div><span class="cl">賣出金額</span><span class="cv" id="sp-gross">—</span></div>
@@ -636,7 +636,7 @@ canvas{width:100%!important}
         <div class="st" id="st-sell"></div>
       </div>
     </div>
- 
+
     <!-- 右：交易記錄 -->
     <div>
       <div class="card">
@@ -646,7 +646,7 @@ canvas{width:100%!important}
     </div>
   </div>
 </div>
- 
+
 <!-- ══════════ 資產負債 ══════════ -->
 <div id="tab-networth" class="page">
   <div class="nwt-bar">
@@ -689,10 +689,10 @@ canvas{width:100%!important}
     <div id="nw-history"><div class="empty">尚無歷史快照</div></div>
   </div>
 </div>
- 
+
 <!-- ══════════ 不動產 ══════════ -->
 <div id="tab-realestate" class="page">
- 
+
   <!-- 摘要列 -->
   <div class="re-strip">
     <div class="re-sc"><div class="lb">房屋現值</div><div class="vl" id="re-house-val">—</div><div class="sb" id="re-house-chg"></div></div>
@@ -700,7 +700,7 @@ canvas{width:100%!important}
     <div class="re-sc"><div class="lb">總現值</div><div class="vl blu" id="re-total-val">—</div></div>
     <div class="re-sc"><div class="lb">貸款餘額</div><div class="vl" id="re-loan-bal">—</div></div>
   </div>
- 
+
   <!-- 貸款進度 -->
   <div class="loan-wrap">
     <div class="loan-meta">
@@ -709,7 +709,7 @@ canvas{width:100%!important}
     </div>
     <div class="loan-bar-wrap"><div class="loan-bar" id="re-loan-bar" style="width:0%"></div></div>
   </div>
- 
+
   <div class="two-col" style="align-items:start">
     <!-- 左：輸入表單 -->
     <div>
@@ -725,7 +725,7 @@ canvas{width:100%!important}
         <button class="btn btn-p" onclick="saveReValue()">儲存本月現值</button>
         <div class="st" id="st-re-val"></div>
       </div>
- 
+
       <!-- 貸款設定 -->
       <div class="card">
         <div class="card-title">貸款資訊設定</div>
@@ -735,7 +735,7 @@ canvas{width:100%!important}
         <div class="fg"><label>每月應繳總額（元）</label><input type="number" id="re-monthly-total" placeholder="0" oninput="saveReConfig()"></div>
         <p style="font-size:10px;color:var(--muted);margin-top:4px">設定後自動儲存，用於計算繳款分拆與進度</p>
       </div>
- 
+
       <!-- 每月繳款記錄 -->
       <div class="card">
         <div class="card-title">記錄本月繳款</div>
@@ -751,7 +751,7 @@ canvas{width:100%!important}
         <div class="st" id="st-re-pay"></div>
       </div>
     </div>
- 
+
     <!-- 右：圖表 + 歷史 -->
     <div>
       <!-- 折線圖 -->
@@ -764,7 +764,7 @@ canvas{width:100%!important}
           <span><span style="display:inline-block;width:10px;height:3px;background:#2a7348;vertical-align:middle;margin-right:4px;border-radius:1px"></span>總現值</span>
         </div>
       </div>
- 
+
       <!-- 現值歷史 -->
       <div class="card" style="margin-bottom:14px">
         <div class="card-title">現值歷史紀錄</div>
@@ -773,7 +773,7 @@ canvas{width:100%!important}
         </div>
         <div id="re-val-history"><div class="empty">尚無記錄</div></div>
       </div>
- 
+
       <!-- 繳款歷史 -->
       <div class="card">
         <div class="card-title">繳款記錄</div>
@@ -784,7 +784,7 @@ canvas{width:100%!important}
     </div>
   </div>
 </div>
- 
+
 <!-- ══════════ 預算設定 ══════════ -->
 <div id="tab-settings" class="page">
   <div class="two-col">
@@ -809,12 +809,12 @@ canvas{width:100%!important}
     </div>
   </div>
 </div>
- 
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
 // ★ 填入你的 Apps Script Web App 網址
 const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzwg6foiu3Hl7qK4q2v9TxfyuCnzqNfPT7hde-lVlq2gbit_QrYE0DmPAkwec3fdT8I/exec';
- 
+
 // ── 類別 ──
 const INC_CATS = [
   {key:'薪資收入',  color:'#2a7348',emoji:'💼'},
@@ -844,7 +844,7 @@ const LIAB_FIELDS = [
   {id:'l-mort',key:'mortgage'},{id:'l-car',key:'car'},
   {id:'l-card',key:'card'},   {id:'l-other',key:'lOther'},
 ];
- 
+
 // ── State ──
 let Y, M;
 let txns      = [];
@@ -859,40 +859,43 @@ let salaryHistory = []; // [{month, base, prof, mgr, ot, otherInc, retire, ins, 
 let txFilter  = 'all';
 let tradeMode = 'buy';
 const DEMO = APPS_SCRIPT_URL === 'YOUR_APPS_SCRIPT_URL_HERE';
- 
+
 // ── Init ──
 function init(){
   const now = new Date();
   Y = now.getFullYear(); M = now.getMonth()+1;
   const td = now.toISOString().split('T')[0];
+
+  // 安全設定日期欄位（防止 null 錯誤）
   ['in-date','ex-date','b-date','s-date'].forEach(id => {
-    document.getElementById(id).value = td;
+    const el = document.getElementById(id);
+    if(el) el.value = td;
   });
- 
-  if(DEMO) document.getElementById('noticeBar').style.display='block';
- 
+
+  if(DEMO) { const nb=document.getElementById('noticeBar'); if(nb) nb.style.display='block'; }
+
   buildBudgetUI();
   const sb=localStorage.getItem('pf_b'); if(sb){budgets=JSON.parse(sb);applyBudgets();}
   const ss=localStorage.getItem('pf_s'); if(ss) snapshots=JSON.parse(ss);
   const st=localStorage.getItem('pf_t'); if(st) stockTrades=JSON.parse(st);
- 
+
   // Real estate
   const rv=localStorage.getItem('pf_re_v'); if(rv) reValues=JSON.parse(rv);
   const rp=localStorage.getItem('pf_re_p'); if(rp) rePayments=JSON.parse(rp);
   const rc=localStorage.getItem('pf_re_c'); if(rc){ reConfig=JSON.parse(rc); applyReConfig(); }
   const sh=localStorage.getItem('pf_sal'); if(sh) salaryHistory=JSON.parse(sh);
- 
+
   // 預設月份輸入為本月
   const ym=`${Y}-${pad(M)}`;
-  document.getElementById('re-month').value=ym;
-  document.getElementById('re-pay-month').value=ym;
-  document.getElementById('sal-month').value=ym;
+  const reMonthEl=document.getElementById('re-month'); if(reMonthEl) reMonthEl.value=ym;
+  const rePayEl=document.getElementById('re-pay-month'); if(rePayEl) rePayEl.value=ym;
+  const salMonthEl=document.getElementById('sal-month'); if(salMonthEl) salMonthEl.value=ym;
   loadSalaryForMonth();
- 
+
   updateLabel();
   loadData();
 }
- 
+
 function updateLabel(){
   document.getElementById('monthLabel').textContent=`${Y} 年 ${pad(M)} 月`;
 }
@@ -900,7 +903,7 @@ function pad(n){return String(n).padStart(2,'0')}
 function num(v){return parseFloat(v)||0}
 function fmt(n){return n.toLocaleString('zh-TW',{maximumFractionDigits:0})}
 function fmtD(n){return n.toLocaleString('zh-TW',{minimumFractionDigits:2,maximumFractionDigits:2})}
- 
+
 function changeMonth(d){
   M+=d; if(M>12){M=1;Y++;} if(M<1){M=12;Y--;}
   updateLabel(); loadData(); loadSnapshotForMonth(); loadSalaryForMonth();
@@ -915,7 +918,7 @@ function switchTab(name,el){
   if(name==='realestate') renderRE();
   if(name==='income')   renderSalaryHistory();
 }
- 
+
 // ── Budget ──
 function buildBudgetUI(){
   document.getElementById('budget-inputs').innerHTML=EXP_CATS.map(c=>`
@@ -931,7 +934,7 @@ function saveBudgets(){
   localStorage.setItem('pf_b',JSON.stringify(budgets));
   renderDash(); showSt('st-bgt','✓ 已儲存','ok');
 }
- 
+
 // ── Record submit ──
 async function submitRecord(type){
   const isI=type==='income';
@@ -958,7 +961,7 @@ async function submitRecord(type){
   }catch(e){showSt(stId,'連線失敗','er');}
   document.getElementById(bId).disabled=false;
 }
- 
+
 // ── Load data ──
 async function loadData(){
   if(DEMO){if(!txns.length)seedDemo();renderDash();return;}
@@ -969,7 +972,7 @@ async function loadData(){
     if(j.success){txns=j.data;renderDash();}
   }catch(e){console.error(e);}
 }
- 
+
 function seedDemo(){
   const y=Y, m=pad(M);
   txns=[
@@ -1040,7 +1043,7 @@ function seedDemo(){
     applyReConfig();
   }
 }
- 
+
 // ══ RENDER DASHBOARD ══
 function renderDash(){
   const mTx=txns.filter(t=>{const d=new Date(t.date);return d.getFullYear()===Y&&(d.getMonth()+1)===M;});
@@ -1051,19 +1054,19 @@ function renderDash(){
   const snap=snapshots.find(s=>s.month===mk);
   const nw=snap?snap.netWorth:null;
   const prevS=[...snapshots].filter(s=>s.month<mk).pop();
- 
+
   document.getElementById('ov-inc').textContent=`$${fmt(inc)}`;
   document.getElementById('ov-exp').textContent=`$${fmt(exp)}`;
   const nEl=document.getElementById('ov-net');
   nEl.textContent=(net>=0?'+':'-')+`$${fmt(Math.abs(net))}`;
   nEl.className='vl '+(net>=0?'up':'dn');
- 
+
   const nwEl=document.getElementById('ov-nw'),nwSub=document.getElementById('ov-nw-sub');
   if(nw!==null){
     nwEl.textContent=`$${fmt(nw)}`;
     if(prevS){const d=nw-prevS.netWorth;nwSub.textContent=(d>=0?'▲ +':'▼ -')+`$${fmt(Math.abs(d))}`;nwSub.style.color=d>=0?'var(--up)':'var(--dn)';}
   }else{nwEl.textContent='（未填入）';nwSub.textContent='';}
- 
+
   // Income grid
   document.getElementById('inc-grid').innerHTML=INC_CATS.map(c=>{
     const a=mTx.filter(t=>t.type==='income'&&t.category===c.key).reduce((s,t)=>s+num(t.amount),0);
@@ -1071,7 +1074,7 @@ function renderDash(){
       <div class="il">${c.emoji} ${c.key}</div>
       <div class="iv" style="color:${a>0?c.color:'var(--muted)'}">$${fmt(a)}</div></div>`;
   }).join('');
- 
+
   // Expense grid
   document.getElementById('exp-grid').innerHTML=EXP_CATS.map(c=>{
     const sp=mTx.filter(t=>t.type==='expense'&&t.category===c.key).reduce((s,t)=>s+num(t.amount),0);
@@ -1083,7 +1086,7 @@ function renderDash(){
       ${bg?`<div class="pw"><div class="pb" style="width:${pct}%;background:${over?'var(--up)':c.color}"></div></div>
       <div class="erem ${over?'over':''}">${over?`⚠ 超 $${fmt(sp-bg)}`:`剩 $${fmt(rem)}`}</div>`:''}</div>`;
   }).join('');
- 
+
   renderTxList(mTx);
   const sd=(a,b)=>new Date(b.date)-new Date(a.date);
   const iL=[...mTx.filter(t=>t.type==='income')].sort(sd);
@@ -1092,7 +1095,7 @@ function renderDash(){
   document.getElementById('tx-exp-list').innerHTML=eL.length?eL.map(txHTML).join(''):'<div class="empty">本月尚無支出記錄</div>';
   renderNWHistory();
 }
- 
+
 function renderTxList(mTx){
   const f=txFilter==='all'?mTx:mTx.filter(t=>t.type===txFilter);
   const s=[...f].sort((a,b)=>new Date(b.date)-new Date(a.date));
@@ -1113,9 +1116,9 @@ function txHTML(t){
     <div class="tinfo"><div class="tdesc">${t.note||t.category}</div><div class="tmeta">${ds} · ${cat.emoji} ${t.category}</div></div>
     <div class="tamt ${t.type}">${t.type==='income'?'+':''}$${fmt(num(t.amount))}</div></div>`;
 }
- 
+
 // ══ STOCK MODULE ══
- 
+
 // 計算每支股票的持倉狀態（平均成本法）
 function calcHoldings(){
   const map = {}; // code → {name, shares, totalCost}
@@ -1140,10 +1143,10 @@ function calcHoldings(){
     .filter(([,h])=>h.shares>0)
     .map(([code,h])=>({code, name:h.name, shares:h.shares, totalCost:h.totalCost, avgCost:h.totalCost/h.shares}));
 }
- 
+
 function renderStock(){
   const holdings = calcHoldings();
- 
+
   // 更新賣出下拉選單
   const sel=document.getElementById('s-code');
   sel.innerHTML='<option value="">— 選擇持倉股票 —</option>';
@@ -1152,7 +1155,7 @@ function renderStock(){
     opt.value=h.code; opt.textContent=`${h.code} ${h.name}`;
     sel.appendChild(opt);
   });
- 
+
   // 持倉表格
   const tbody=document.getElementById('holdings-tbody');
   if(!holdings.length){
@@ -1181,7 +1184,7 @@ function renderStock(){
       if(saved) updateHoldingRow(h.code,h.shares,h.totalCost,h.avgCost,saved);
     });
   }
- 
+
   // Summary strip
   const totalCost=holdings.reduce((s,h)=>s+h.totalCost,0);
   let totalVal=0, hasAllPrices=true;
@@ -1191,7 +1194,7 @@ function renderStock(){
   });
   const unrealized=totalVal-totalCost;
   const realized=stockTrades.filter(t=>t.type==='sell').reduce((s,t)=>s+(t.pnl||0),0);
- 
+
   document.getElementById('stk-total-cost').textContent=`$${fmt(totalCost)}`;
   document.getElementById('stk-total-val').textContent=hasAllPrices&&holdings.length?`$${fmt(totalVal)}`:'（請輸入現價）';
   const urEl=document.getElementById('stk-unrealized');
@@ -1202,7 +1205,7 @@ function renderStock(){
   const rlEl=document.getElementById('stk-realized');
   rlEl.textContent=(realized>=0?'+':'')+`$${fmt(realized)}`;
   rlEl.className='vl '+(realized>=0?'up':'dn');
- 
+
   // Trade log
   const log=document.getElementById('trade-log');
   const sortedLog=[...stockTrades].sort((a,b)=>new Date(b.date)-new Date(a.date));
@@ -1234,7 +1237,7 @@ function renderStock(){
     }
   }).join('');
 }
- 
+
 function updateHoldingRow(code,shares,totalCost,avgCost,priceStr){
   const p=num(priceStr);
   if(!p) return;
@@ -1247,7 +1250,7 @@ function updateHoldingRow(code,shares,totalCost,avgCost,priceStr){
   if(pnlEl){pnlEl.innerHTML=`<span class="${cls}">${pnl>=0?'+':''}$${fmt(pnl)}</span>`;}
   if(pctEl){pctEl.innerHTML=`<span class="${cls}">${pct>=0?'+':''}${pct.toFixed(2)}%</span>`;}
 }
- 
+
 // ── 買入表單 ──
 function setMode(m){
   tradeMode=m;
@@ -1257,7 +1260,7 @@ function setMode(m){
   document.getElementById('form-sell').style.display=m==='sell'?'':'none';
   if(m==='sell') fillSellName();
 }
- 
+
 function calcBuy(){
   const shares=num(document.getElementById('b-shares').value);
   const price=num(document.getElementById('b-price').value);
@@ -1270,7 +1273,7 @@ function calcBuy(){
   document.getElementById('bp-fee').textContent=gross?`$${fmt(fee)}`:'—';
   document.getElementById('bp-total').textContent=gross?`$${fmt(total)}`:'—';
 }
- 
+
 function submitBuy(){
   const code=document.getElementById('b-code').value.trim();
   const name=document.getElementById('b-name').value.trim();
@@ -1278,12 +1281,12 @@ function submitBuy(){
   const shares=num(document.getElementById('b-shares').value);
   const price=num(document.getElementById('b-price').value);
   if(!code||!date||!shares||!price){showSt('st-buy','請填寫完整資料','er');return;}
- 
+
   const gross=shares*price;
   const feeInput=document.getElementById('b-fee').value;
   const fee=feeInput?num(feeInput):Math.max(Math.round(gross*0.001425),20);
   const cost=gross+fee;
- 
+
   const trade={id:Date.now(),type:'buy',code,name:name||code,date,shares,price,fee,tax:0,cost,pnl:null};
   stockTrades.push(trade);
   localStorage.setItem('pf_t',JSON.stringify(stockTrades));
@@ -1292,7 +1295,7 @@ function submitBuy(){
   ['b-code','b-name','b-shares','b-price','b-fee'].forEach(id=>document.getElementById(id).value='');
   calcBuy();
 }
- 
+
 // ── 賣出表單 ──
 function fillSellName(){
   const code=document.getElementById('s-code').value;
@@ -1301,7 +1304,7 @@ function fillSellName(){
   document.getElementById('s-name').value=h?h.name:'';
   calcSell();
 }
- 
+
 function calcSell(){
   const code=document.getElementById('s-code').value;
   const holdings=calcHoldings();
@@ -1309,7 +1312,7 @@ function calcSell(){
   const shares=num(document.getElementById('s-shares').value);
   const price=num(document.getElementById('s-price').value);
   if(!h||!shares||!price){return;}
- 
+
   const gross=shares*price;
   const feeInput=document.getElementById('s-fee').value;
   const taxInput=document.getElementById('s-tax').value;
@@ -1318,7 +1321,7 @@ function calcSell(){
   const netAmt=gross-fee-tax;
   const batchCost=h.avgCost*shares;
   const pnl=netAmt-batchCost;
- 
+
   document.getElementById('sp-gross').textContent=`$${fmt(gross)}`;
   document.getElementById('sp-fee').textContent=`$${fmt(fee)}`;
   document.getElementById('sp-tax').textContent=`$${fmt(tax)}`;
@@ -1328,12 +1331,12 @@ function calcSell(){
   const pnlEl=document.getElementById('sp-pnl');
   pnlEl.textContent=`${pnl>=0?'+':''}$${fmt(pnl)} (${((pnl/batchCost)*100).toFixed(2)}%)`;
   pnlEl.style.color=pnl>=0?'var(--up)':'var(--dn)';
- 
+
   // 自動填入計算值
   if(!feeInput) document.getElementById('s-fee').placeholder=`自動 $${fmt(fee)}`;
   if(!taxInput) document.getElementById('s-tax').placeholder=`自動 $${fmt(tax)}`;
 }
- 
+
 function submitSell(){
   const code=document.getElementById('s-code').value;
   const holdings=calcHoldings();
@@ -1344,7 +1347,7 @@ function submitSell(){
   const date=document.getElementById('s-date').value;
   if(!shares||!price||!date){showSt('st-sell','請填寫完整資料','er');return;}
   if(shares>h.shares){showSt('st-sell',`持股數不足（目前 ${fmt(h.shares)} 股）`,'er');return;}
- 
+
   const gross=shares*price;
   const feeInput=document.getElementById('s-fee').value;
   const taxInput=document.getElementById('s-tax').value;
@@ -1353,7 +1356,7 @@ function submitSell(){
   const netAmt=gross-fee-tax;
   const batchCost=h.avgCost*shares;
   const pnl=netAmt-batchCost;
- 
+
   const trade={id:Date.now(),type:'sell',code,name:h.name,date,shares,price,fee,tax,netAmt,avgCost:h.avgCost,batchCost,pnl};
   stockTrades.push(trade);
   localStorage.setItem('pf_t',JSON.stringify(stockTrades));
@@ -1364,7 +1367,7 @@ function submitSell(){
   document.getElementById('s-code').value='';
   fillSellName();
 }
- 
+
 // ══ NET WORTH ══
 function calcNW(){
   const ga=id=>num(document.getElementById(id).value);
@@ -1419,20 +1422,20 @@ function renderNWHistory(){
       <span class="hv">淨 $${fmt(s.netWorth)}</span>${diff}</div>`;
   }).join('');
 }
- 
+
 // ══ SALARY MODULE ══
 const SAL_INC_IDS = ['sal-base','sal-prof','sal-mgr','sal-ot','sal-other-inc'];
 const SAL_DED_IDS = ['sal-retire','sal-ins','sal-health','sal-other-ded'];
 const SAL_INC_KEYS= ['base','prof','mgr','ot','otherInc'];
 const SAL_DED_KEYS= ['retire','ins','health','otherDed'];
- 
+
 function setIncMode(mode, btn){
   document.getElementById('inc-mode-sal').classList.toggle('active', mode==='salary');
   document.getElementById('inc-mode-oth').classList.toggle('active', mode==='other');
   document.getElementById('form-salary').style.display   = mode==='salary'?'':'none';
   document.getElementById('form-inc-other').style.display= mode==='other' ?'':'none';
 }
- 
+
 function calcSalary(){
   const gross = SAL_INC_IDS.reduce((s,id)=>s+num(document.getElementById(id).value),0);
   const deduct= SAL_DED_IDS.reduce((s,id)=>s+num(document.getElementById(id).value),0);
@@ -1441,7 +1444,7 @@ function calcSalary(){
   document.getElementById('sal-deduct-total').textContent = `$${fmt(deduct)}`;
   document.getElementById('sal-net').textContent          = `$${fmt(net)}`;
 }
- 
+
 function loadSalaryForMonth(){
   const mk =`${Y}-${pad(M)}`;
   const rec = salaryHistory.find(s=>s.month===mk);
@@ -1450,15 +1453,15 @@ function loadSalaryForMonth(){
   document.getElementById('sal-month').value = mk;
   calcSalary();
 }
- 
+
 async function submitSalary(){
   const month  = document.getElementById('sal-month').value;
   const gross  = SAL_INC_IDS.reduce((s,id)=>s+num(document.getElementById(id).value),0);
   const deduct = SAL_DED_IDS.reduce((s,id)=>s+num(document.getElementById(id).value),0);
   const net    = gross - deduct;
- 
+
   if(!month||!gross){ showSt('st-sal','請填寫月份與薪資項目','er'); return; }
- 
+
   const rec = {
     month,
     base:    num(document.getElementById('sal-base').value),
@@ -1472,13 +1475,13 @@ async function submitSalary(){
     otherDed:num(document.getElementById('sal-other-ded').value),
     gross, deductTotal:deduct, net
   };
- 
+
   // 更新本地歷史
   const idx = salaryHistory.findIndex(s=>s.month===month);
   if(idx>=0) salaryHistory[idx]=rec; else salaryHistory.push(rec);
   salaryHistory.sort((a,b)=>a.month.localeCompare(b.month));
   localStorage.setItem('pf_sal',JSON.stringify(salaryHistory));
- 
+
   // 同步到收入記錄（以實拿薪資寫入）
   const dateStr=`${month}-05`; // 預設5號為發薪日
   if(DEMO){
@@ -1490,7 +1493,7 @@ async function submitSalary(){
     renderSalaryHistory();
     return;
   }
- 
+
   document.getElementById('btn-sal').disabled=true;
   showSt('st-sal','儲存中…','ld');
   try{
@@ -1505,7 +1508,7 @@ async function submitSalary(){
   }catch(e){ showSt('st-sal','連線失敗','er'); }
   document.getElementById('btn-sal').disabled=false;
 }
- 
+
 function renderSalaryHistory(){
   const el=document.getElementById('sal-history');
   if(!salaryHistory.length){ el.innerHTML='<div class="empty">尚無薪資記錄</div>'; return; }
@@ -1525,7 +1528,7 @@ function renderSalaryHistory(){
     </div>`;
   }).join('');
 }
- 
+
 function loadSalaryRec(month){
   // 點歷史紀錄自動填入表單
   document.getElementById('sal-month').value=month;
@@ -1536,9 +1539,9 @@ function loadSalaryRec(month){
   calcSalary();
   window.scrollTo({top:0,behavior:'smooth'});
 }
- 
+
 // ══ REAL ESTATE MODULE ══
- 
+
 function applyReConfig(){
   const c=reConfig;
   if(c.loanOrig)    document.getElementById('re-loan-orig').value=c.loanOrig;
@@ -1546,7 +1549,7 @@ function applyReConfig(){
   if(c.rate)        document.getElementById('re-rate').value=c.rate;
   if(c.monthlyTotal)document.getElementById('re-monthly-total').value=c.monthlyTotal;
 }
- 
+
 function saveReConfig(){
   reConfig={
     loanOrig:    num(document.getElementById('re-loan-orig').value),
@@ -1557,13 +1560,13 @@ function saveReConfig(){
   localStorage.setItem('pf_re_c',JSON.stringify(reConfig));
   renderRESummary();
 }
- 
+
 function reCalcPreview(){
   const h=num(document.getElementById('re-house').value);
   const l=num(document.getElementById('re-land').value);
   document.getElementById('re-preview-total').textContent=h+l?`$${fmt(h+l)}`:'—';
 }
- 
+
 function reCalcPayment(){
   const p=num(document.getElementById('re-principal').value);
   // 如果利息欄空白，根據貸款餘額 × 月利率自動估算
@@ -1577,7 +1580,7 @@ function reCalcPayment(){
   document.getElementById('rp-interest').textContent=interest?`$${fmt(interest)}`:'—';
   document.getElementById('rp-total').textContent=total?`$${fmt(total)}`:'—';
 }
- 
+
 function saveReValue(){
   const month=document.getElementById('re-month').value;
   const house=num(document.getElementById('re-house').value);
@@ -1592,7 +1595,7 @@ function saveReValue(){
   renderRE();
   showSt('st-re-val',`✓ ${month} 現值已儲存，總計 $${fmt(total)}`,'ok');
 }
- 
+
 function saveRePayment(){
   const month    =document.getElementById('re-pay-month').value;
   const principal=num(document.getElementById('re-principal').value);
@@ -1611,19 +1614,19 @@ function saveRePayment(){
   renderRE();
   showSt('st-re-pay',`✓ ${month} 繳款 $${fmt(total)}（本金 $${fmt(principal)} / 利息 $${fmt(interest)}）`,'ok');
 }
- 
+
 function renderRE(){
   renderRESummary();
   renderREChart();
   renderREValHistory();
   renderREPayHistory();
 }
- 
+
 function renderRESummary(){
   const sorted=[...reValues].sort((a,b)=>a.month.localeCompare(b.month));
   const latest =sorted[sorted.length-1];
   const prev   =sorted[sorted.length-2];
- 
+
   if(latest){
     document.getElementById('re-house-val').textContent=`$${fmt(latest.house)}`;
     document.getElementById('re-land-val').textContent=`$${fmt(latest.land)}`;
@@ -1637,7 +1640,7 @@ function renderRESummary(){
       lEl.style.color=ld>=0?'var(--up)':'var(--dn)';
     }
   }
- 
+
   // 貸款進度
   const bal=reConfig.loanRemain||0, orig=reConfig.loanOrig||0;
   document.getElementById('re-loan-bal').textContent=bal?`$${fmt(bal)}`:'—';
@@ -1647,17 +1650,17 @@ function renderRESummary(){
     document.getElementById('re-loan-pct-lbl').textContent=`已還 $${fmt(paid)} / ${pct.toFixed(1)}%`;
   }
 }
- 
+
 function renderREChart(){
   const sorted=[...reValues].sort((a,b)=>a.month.localeCompare(b.month));
   const labels=sorted.map(r=>r.month);
   const houseData=sorted.map(r=>r.house);
   const landData =sorted.map(r=>r.land);
   const totalData=sorted.map(r=>r.total);
- 
+
   const ctx=document.getElementById('re-chart').getContext('2d');
   if(reChart){reChart.destroy(); reChart=null;}
- 
+
   if(!sorted.length){
     ctx.clearRect(0,0,ctx.canvas.width,ctx.canvas.height);
     ctx.font='13px Noto Sans TC';
@@ -1666,7 +1669,7 @@ function renderREChart(){
     ctx.fillText('尚無現值記錄',ctx.canvas.width/2,110);
     return;
   }
- 
+
   reChart=new Chart(ctx,{
     type:'line',
     data:{
@@ -1698,7 +1701,7 @@ function renderREChart(){
     }
   });
 }
- 
+
 function renderREValHistory(){
   const el=document.getElementById('re-val-history');
   const sorted=[...reValues].sort((a,b)=>b.month.localeCompare(a.month));
@@ -1720,7 +1723,7 @@ function renderREValHistory(){
     </div>`;
   }).join('');
 }
- 
+
 function renderREPayHistory(){
   const el=document.getElementById('re-pay-history');
   const sorted=[...rePayments].sort((a,b)=>b.month.localeCompare(a.month));
@@ -1736,17 +1739,17 @@ function renderREPayHistory(){
       <span class="pay-amt">$${fmt(r.total)}</span>
     </div>`).join('');
 }
- 
+
 // ── Status ──
 function showSt(id,msg,type){
   const el=document.getElementById(id);
   el.textContent=msg; el.className='st '+type;
   if(type==='ok') setTimeout(()=>{el.className='st';},3500);
 }
- 
+
 // ══ QUICK ENTRY (FAB) ══
 let qeType = 'expense';
- 
+
 const QE_EXP_CATS = [
   {key:'餐飲',emoji:'🍱'},{key:'交通',emoji:'🚌'},{key:'娛樂',emoji:'🎬'},
   {key:'醫療',emoji:'💊'},{key:'購物',emoji:'🛍'},{key:'房租/水電',emoji:'🏠'},
@@ -1756,7 +1759,7 @@ const QE_INC_CATS = [
   {key:'薪資收入',emoji:'💼'},{key:'獎金／兼職',emoji:'🎁'},{key:'股票股息',emoji:'💹'},
   {key:'基金',emoji:'🏦'},{key:'不動產租金',emoji:'🏠'},{key:'其他收入',emoji:'📌'},
 ];
- 
+
 function openQE(){
   const overlay=document.getElementById('qe-overlay');
   // 預設今天日期
@@ -1769,40 +1772,40 @@ function openQE(){
   // 自動聚焦金額欄（手機鍵盤彈出）
   setTimeout(()=>document.getElementById('qe-amt').focus(),320);
 }
- 
+
 function closeQE(){
   document.getElementById('qe-overlay').classList.remove('open');
 }
- 
+
 function closeQEOnBg(e){
   if(e.target===document.getElementById('qe-overlay')) closeQE();
 }
- 
+
 function setQEType(type, btn){
   qeType=type;
   document.getElementById('qe-btn-exp').className='qe-type-btn'+(type==='expense'?' active exp':'');
   document.getElementById('qe-btn-inc').className='qe-type-btn inc'+(type==='income'?' active':'');
   buildQECats();
 }
- 
+
 function buildQECats(){
   const sel=document.getElementById('qe-cat');
   const cats=qeType==='expense'?QE_EXP_CATS:QE_INC_CATS;
   sel.innerHTML=cats.map(c=>`<option value="${c.key}">${c.emoji} ${c.key}</option>`).join('');
 }
- 
+
 async function submitQE(){
   const amt   = parseFloat(document.getElementById('qe-amt').value)||0;
   const cat   = document.getElementById('qe-cat').value;
   const date  = document.getElementById('qe-date').value;
   const note  = document.getElementById('qe-note').value.trim();
   const type  = qeType;
- 
+
   if(!amt||amt<=0){
     document.getElementById('qe-st').textContent='請輸入金額';
     document.getElementById('qe-st').className='qe-st er'; return;
   }
- 
+
   if(DEMO){
     txns.push({type,date,category:cat,amount:amt,note});
     renderDash();
@@ -1810,12 +1813,12 @@ async function submitQE(){
     document.getElementById('qe-st').className='qe-st ld';
     setTimeout(closeQE,1200); return;
   }
- 
+
   const btn=document.getElementById('qe-submit');
   btn.disabled=true;
   document.getElementById('qe-st').textContent='傳送中…';
   document.getElementById('qe-st').className='qe-st ld';
- 
+
   try{
     const p=new URLSearchParams({action:'addRecord',type,date,category:cat,amount:amt,note});
     const r=await fetch(`${APPS_SCRIPT_URL}?${p}`);
@@ -1839,7 +1842,7 @@ async function submitQE(){
   }
   btn.disabled=false;
 }
- 
+
 // 滑動關閉 modal（手機向下滑）
 function setupSwipeClose(){
   let startY=0;
@@ -1851,13 +1854,15 @@ function setupSwipeClose(){
     if(dy>80) closeQE();
   },{passive:true});
 }
- 
-init();
-setupSwipeClose();
+
+document.addEventListener('DOMContentLoaded', function(){
+  init();
+  setupSwipeClose();
+});
 </script>
 <!-- ── FAB 快速記帳按鈕 ── -->
 <button class="fab" onclick="openQE()" title="快速記帳">＋</button>
- 
+
 <!-- ── 快速記帳 Modal ── -->
 <div class="qe-overlay" id="qe-overlay" onclick="closeQEOnBg(event)">
   <div class="qe-sheet" id="qe-sheet">
@@ -1866,13 +1871,13 @@ setupSwipeClose();
       <h2>快速記帳</h2>
       <button class="qe-close" onclick="closeQE()">✕</button>
     </div>
- 
+
     <!-- 收入 / 支出切換 -->
     <div class="qe-type">
       <button class="qe-type-btn active exp" id="qe-btn-exp" onclick="setQEType('expense',this)">支出</button>
       <button class="qe-type-btn inc"         id="qe-btn-inc" onclick="setQEType('income',this)">收入</button>
     </div>
- 
+
     <div class="qe-body">
       <!-- 金額（大字） -->
       <div class="qe-fg">
@@ -1882,7 +1887,7 @@ setupSwipeClose();
           <input class="qe-amt" type="number" id="qe-amt" placeholder="0" inputmode="decimal" min="0">
         </div>
       </div>
- 
+
       <div class="qe-frow">
         <!-- 類別 -->
         <div class="qe-fg">
@@ -1895,19 +1900,18 @@ setupSwipeClose();
           <input type="date" id="qe-date">
         </div>
       </div>
- 
+
       <!-- 備註 -->
       <div class="qe-fg">
         <label>備註（選填）</label>
         <input type="text" id="qe-note" placeholder="例：午餐、通勤…">
       </div>
     </div>
- 
+
     <button class="qe-submit" id="qe-submit" onclick="submitQE()">記錄</button>
     <div class="qe-st" id="qe-st"></div>
   </div>
 </div>
- 
+
 </body>
 </html>
- 
